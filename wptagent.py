@@ -1081,10 +1081,10 @@ def get_browser_versions(browsers):
 def fix_selenium_version():
     """
     On older python versions we are going to force selenium version 3.141.0, 
-    newer versions are going to use 4.8.3
+    newer versions are going to use 4.26.1
     """
     from internal.os_util import run_elevated
-    version = '4.18.1'
+    version = '4.26.1'
     if sys.version_info[1] == 6:
         version = '3.141.0'
 
